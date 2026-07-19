@@ -1010,6 +1010,7 @@ footer p {
     /* --- Table --- */
     table {
         display: block;
+        width: 100%; /* Add width: 100% */
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
     }
