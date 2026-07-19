@@ -46,6 +46,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -59,6 +60,15 @@ body {
     min-height: 100vh; /* Added for sticky footer */
     display: flex; /* Added for sticky footer */
     flex-direction: column; /* Added for sticky footer */
+    min-width: 0;
+}
+
+/* Flex items shrink to fit the viewport instead of forcing the
+   whole page to widen when a child (e.g. a table) is wide */
+header,
+.hero,
+main.container,
+footer {
     min-width: 0;
 }
 
@@ -866,6 +876,14 @@ footer p {
         width: 38px;
         height: 38px;
         font-size: 15px;
+    }
+
+    /* --- Table (avoid overflow on tablet widths) --- */
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
 }
 
