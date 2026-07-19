@@ -229,7 +229,14 @@
             </button>
             <div class="song-info">
               <span class="song-name">33x</span>
-              <span class="song-duration">7:14</span>
+              <span class="song-duration"></span>
+              <div class="song-progress-bar">
+                <div class="song-progress"></div>
+              </div>
+              <div class="song-time-display">
+                <span class="current-time">0:00</span>
+                <span class="total-time">7:14</span>
+              </div>
             </div>
             <div class="song-actions">
               <button class="btn-lyrics" data-song="1">LYRICS</button>
@@ -294,7 +301,14 @@
             </button>
             <div class="song-info">
               <span class="song-name">Pikiran Yang Matang</span>
-              <span class="song-duration">3:12</span>
+              <span class="song-duration"></span>
+              <div class="song-progress-bar">
+                <div class="song-progress"></div>
+              </div>
+              <div class="song-time-display">
+                <span class="current-time">0:00</span>
+                <span class="total-time">3:12</span>
+              </div>
             </div>
             <div class="song-actions">
               <button class="btn-lyrics" data-song="2">LYRICS</button>
@@ -345,7 +359,14 @@
             </button>
             <div class="song-info">
               <span class="song-name">Pastikan Riuh Akhiri Malammu</span>
-              <span class="song-duration">4:12</span>
+              <span class="song-duration"></span>
+              <div class="song-progress-bar">
+                <div class="song-progress"></div>
+              </div>
+              <div class="song-time-display">
+                <span class="current-time">0:00</span>
+                <span class="total-time">4:12</span>
+              </div>
             </div>
             <div class="song-actions">
               <button class="btn-lyrics" data-song="3">LYRICS</button>
@@ -406,7 +427,14 @@
             </button>
             <div class="song-info">
               <span class="song-name">Kalibata , 2012</span>
-              <span class="song-duration">5:01</span>
+              <span class="song-duration"></span>
+              <div class="song-progress-bar">
+                <div class="song-progress"></div>
+              </div>
+              <div class="song-time-display">
+                <span class="current-time">0:00</span>
+                <span class="total-time">5:01</span>
+              </div>
             </div>
             <div class="song-actions">
               <button class="btn-lyrics" data-song="4">LYRICS</button>
@@ -414,6 +442,8 @@
             </div>
           </div>
         </div>
+
+        
 
         <!-- LYRICS / CHORD PANEL -->
         <div class="lyrics-panel" id="lyrics-panel">
@@ -570,10 +600,38 @@
             // Buat audio element baru
             btn.audioElement = new Audio(audioSrc);
 
+            // Get progress bar dan time display elements
+            const progressBar = songItem.querySelector('.song-progress');
+            const currentTimeSpan = songItem.querySelector('.current-time');
+            const totalTimeSpan = songItem.querySelector('.total-time');
+
+            // Format time helper function
+            function formatTime(seconds) {
+              const mins = Math.floor(seconds / 60);
+              const secs = Math.floor(seconds % 60);
+              return `${mins}:${secs.toString().padStart(2, '0')}`;
+            }
+
+            // Update progress bar saat audio diputar
+            btn.audioElement.addEventListener('timeupdate', () => {
+              const progress = (btn.audioElement.currentTime / btn.audioElement.duration) * 100;
+              progressBar.style.width = `${progress}%`;
+              currentTimeSpan.textContent = formatTime(btn.audioElement.currentTime);
+            });
+
+            // Set total duration saat metadata dimuat
+            btn.audioElement.addEventListener('loadedmetadata', () => {
+              totalTimeSpan.textContent = formatTime(btn.audioElement.duration);
+            });
+
             // Event ketika audio selesai
             btn.audioElement.addEventListener("ended", () => {
               btn.innerHTML = '<i class="fas fa-play"></i>';
               songItem.classList.remove("playing");
+
+              // Reset progress bar
+              progressBar.style.width = '0%';
+              currentTimeSpan.textContent = '0:00';
 
               // Stop lyrics sync
               if (lyricsInterval) {
