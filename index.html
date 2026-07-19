@@ -282,6 +282,15 @@
     // Start auto slide
     startAutoSlide();
 
+    // Buy ticket buttons
+    const buyButtons = document.querySelectorAll('.btn-buy');
+    buyButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            alert('Tiket akan segera hadir!');
+        });
+    });
+
     // Play button toggle
     const playBtn = document.getElementById('btn-play');
     const audioPlayer = document.getElementById('audio-player');
