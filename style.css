@@ -4104,3 +4104,15 @@ nav a.active::after {
         font-size: 10px;
     }
 }
+
+.table-responsive{
+    width:100%;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+}
+
+.tour-table{
+    width:100%;
+    min-width:650px;
+    border-collapse:collapse;
+}
