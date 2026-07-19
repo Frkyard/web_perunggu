@@ -59,6 +59,7 @@ body {
     min-height: 100vh; /* Added for sticky footer */
     display: flex; /* Added for sticky footer */
     flex-direction: column; /* Added for sticky footer */
+    min-width: 0;
 }
 
 /* Subtle animated background grain */
@@ -978,6 +979,16 @@ footer p {
         grid-template-columns: 1fr;
         padding: 20px 16px;
         gap: 20px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    p {
+        word-break: break-word;
     }
 
     /* --- Cards --- */
