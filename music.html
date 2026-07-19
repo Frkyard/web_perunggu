@@ -1,564 +1,1183 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="PERUNGGU — Dengarkan album, single, dan lagu terbaru. Lihat lirik dan chord dari band PERUNGGU.">
-    <meta name="theme-color" content="#0a0a0f">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="PERUNGGU — Dengarkan album, single, dan  lagu terbaru. Lihat lirik dan chord dari band PERUNGGU."
+    />
+    <meta name="theme-color" content="#0a0a0f" />
     <title>PERUNGGU — Music</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-<body>
-
-<!-- HEADER -->
-<header id="main-header">
-    <div class="logo">
-        <img src="images/logo.jpeg" alt="Logo Perunggu">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="main-header">
+      <div class="logo">
+        <img src="images/logo.jpeg" alt="Logo Perunggu" />
         <span>PERUNGGU</span>
-    </div>
-    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+      </div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
-    </button>
-    <nav id="main-nav">
+      </button>
+      <nav id="main-nav">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="music.html" class="active">Music</a></li>
-            <li><a href="updates.html">Updates</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="music.html" class="active">Music</a></li>
+          <li><a href="updates.html">Updates</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<!-- ALBUM & SINGLE -->
-<section class="page-section" id="album-section">
-    <div class="album-header">
+    <!-- ALBUM & SINGLE -->
+    <section class="page-section" id="album-section">
+      <div class="album-header">
         <h2 class="section-title">Album &amp; Single</h2>
-        <a href="#" class="btn-secondary" id="btn-view-all-albums">View All</a>
-    </div>
+        <a href="albums.html" class="btn-secondary" id="btn-view-all-albums">View All</a>
+      </div>
 
-    <div class="album-scroll">
+      <div class="album-scroll">
         <div class="album-card" id="album-1">
-            <div class="album-cover">
-                <img src="images/albums/memorandum.jpeg" alt="Album Memorandum" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-md);">
-            </div>
-            <div class="album-info">
-                <h3>Memorandum</h3>
-                <p>Album &bull; 2022</p>
-            </div>
+          <div class="album-cover">
+            <img
+              src="images/albums/memorandum.jpeg"
+              alt="Album Memorandum"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: var(--radius-md);
+              "
+            />
+          </div>
+          <div class="album-info">
+            <h3>Memorandum</h3>
+            <p>Album &bull; 2022</p>
+          </div>
         </div>
 
         <div class="album-card" id="album-2">
-            <div class="album-cover">
-                <img src="images/albums/dalam-dinamika.jpeg" alt="Album Dalam Dinamika" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-md);">
-            </div>
-            <div class="album-info">
-                <h3>Dalam Dinamika</h3>
-                <p>Album &bull; 2025</p>
-            </div>
+          <div class="album-cover">
+            <img
+              src="images/albums/dalam-dinamika.jpeg"
+              alt="Album Dalam Dinamika"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: var(--radius-md);
+              "
+            />
+          </div>
+          <div class="album-info">
+            <h3>Dalam Dinamika</h3>
+            <p>Album &bull; 2025</p>
+          </div>
         </div>
 
         <div class="album-card" id="album-3">
-            <div class="album-cover">
-                <img src="images/albums/pasti-ada-jalan.jpeg" alt="Single Pasti Ada Jalan" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-md);">
-            </div>
-            <div class="album-info">
-                <h3>Pasti Ada Jalan</h3>
-                <p>Single &bull; 2025</p>
-            </div>
+          <div class="album-cover">
+            <img
+              src="images/albums/pasti-ada-jalan.jpeg"
+              alt="Single Pasti Ada Jalan"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: var(--radius-md);
+              "
+            />
+          </div>
+          <div class="album-info">
+            <h3>Pasti Ada Jalan</h3>
+            <p>Single &bull; 2025</p>
+          </div>
         </div>
 
         <div class="album-card" id="album-4">
-            <div class="album-cover">
-                <img src="images/albums/biang-lara.jpeg" alt="Single Biang Lara" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-md);">
-            </div>
-            <div class="album-info">
-                <h3>Biang Lara</h3>
-                <p>Single &bull; 2021</p>
-            </div>
+          <div class="album-cover">
+            <img
+              src="images/albums/biang-lara.jpeg"
+              alt="Single Biang Lara"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: var(--radius-md);
+              "
+            />
+          </div>
+          <div class="album-info">
+            <h3>Biang Lara</h3>
+            <p>Single &bull; 2021</p>
+          </div>
         </div>
 
         <div class="album-card" id="album-5">
-            <div class="album-cover">
-                <img src="images/albums/tarung-bebas.jpeg" alt="Single Tarung Bebas" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-md);">
-            </div>
-            <div class="album-info">
-                <h3>Tarung Bebas</h3>
-                <p>Single &bull; 2021</p>
-            </div>
+          <div class="album-cover">
+            <img
+              src="images/albums/tarung-bebas.jpeg"
+              alt="Single Tarung Bebas"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: var(--radius-md);
+              "
+            />
+          </div>
+          <div class="album-info">
+            <h3>Tarung Bebas</h3>
+            <p>Single &bull; 2021</p>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- SONG LIST + LYRICS/CHORD -->
-<section class="page-section" id="songs-section">
-    <div class="music-content">
-
+    <!-- SONG LIST + LYRICS/CHORD -->
+    <section class="page-section" id="songs-section">
+      <div class="music-content">
         <!-- SONG LIST -->
         <div class="song-list-section">
-            <h2 class="section-title">Song List</h2>
+          <h2 class="section-title">Song List</h2>
 
-            <div class="song-item" id="song-1" data-lyrics="Risalah terikatnya\nBatin dan raga yang mengunci\nDiatas sang maha daya\nSemua kendali terambil alih\nJikalau kau keluhkan\nDengung sumbang yang mengganggu\nBuka lagi visimu\nKau tahu mana urutan satu" data-lyrics-file="lyrics/33x.html" data-chord-file="chord/33x.html" data-audio="music/33x.mp3" data-lyrics-sync='[
-                {"time": 0, "text": "Risalah terikatnya"},
-                {"time": 3, "text": "Batin dan raga yang mengunci"},
-                {"time": 6, "text": "Diatas sang maha daya"},
-                {"time": 9, "text": "Semua kendali terambil alih"},
-                {"time": 13, "text": "Jikalau kau keluhkan"},
-                {"time": 16, "text": "Dengung sumbang yang mengganggu"},
-                {"time": 19, "text": "Buka lagi visimu"},
-                {"time": 22, "text": "Kau tahu mana urutan satu"},
-                {"time": 26, "text": ""},
-                {"time": 28, "text": "Diantara pusaran nirfungsi"},
-                {"time": 31, "text": "Petakan semua lagi"},
-                {"time": 34, "text": "Titik tuju yang tlah terpatri"},
-                {"time": 38, "text": "Melamban bukanlah hal yang tabu"},
-                {"time": 42, "text": "Kadang itu yang kau butuh"},
-                {"time": 45, "text": "Bersandar hibahkan bebanmu"}
-            ]'>
-                <button class="song-play-btn" aria-label="Play 33x">
-                    <i class="fas fa-play"></i>
-                </button>
-                <div class="song-info">
-                    <span class="song-name">33x</span>
-                    <span class="song-duration">6:42</span>
-                </div>
-                <div class="song-actions">
-                    <button class="btn-lyrics" data-song="1">LYRICS</button>
-                    <button class="btn-chord" data-song="1">CHORD</button>
-                </div>
+          <div
+            class="song-item"
+            id="song-1"
+            data-lyrics="Risalah terikatnya\nBatin dan raga yang mengunci\nDiatas sang maha daya\nSemua kendali terambil alih\nJikalau kau keluhkan\nDengung sumbang yang mengganggu\nBuka lagi visimu\nKau tahu mana urutan satu"
+            data-lyrics-file="lyrics/33x.html"
+            data-chord-file="chord/33x.html"
+            data-audio="music/33x.mp3"
+            data-lyrics-sync='[
+                {"time": 0, "text": "INTRO"},
+                {"time": 20, "text": "Risalah terikatnya"},
+                {"time": 24, "text": "Batin dan raga yang mengunci"},
+                {"time": 29, "text": "Diatas sang maha daya"},
+                {"time": 33, "text": "Semua kendali terambil alih"},
+                {"time": 39, "text": "Jikalau kau keluhkan"},
+                {"time": 43, "text": "Dengung sumbang yang mengganggu"},
+                {"time": 48, "text": "Buka lagi visimu"},
+                {"time": 52, "text": "Kau tahu mana urutan satu"},
+                {"time": 59, "text": "Diantara pusaran nirfungsi"},
+                {"time": 66, "text": "Petakan semua lagi"},
+                {"time": 71, "text": "Titik tuju yang tlah terpatri"},
+                {"time": 77, "text": "Melamban bukanlah hal yang tabu"},
+                {"time": 85, "text": "Kadang itu yang kau butuh"},
+                {"time": 90, "text": "Bersandar hibahkan bebanmu"},
+                {"time": 95, "text": "Rotasikan Pandanganmu"},
+                {"time": 100, "text": "Ambil Sudut yang Terbaru"},
+                {"time": 105, "text": "Belum Pernah kau coba"},
+                {"time": 108, "text": "Lihat semua bukan dari matamu"},
+                {"time": 114, "text": "Kelak kau kan mengingat"},
+                {"time": 119, "text": "Yang membawamu kesini"},
+                {"time": 124, "text": "Kami pernah disitu, diposisimu"},
+                {"time": 130, "text": "Helakan kesahmu"},
+                {"time": 135, "text": "♪"},
+                {"time": 139, "text": "Di antara pusaran nirfungsi"},
+                {"time": 147, "text": "Petakan semua lagi"},
+                {"time": 151, "text": "Titik tuju yang telah terpatri"},
+                {"time": 158, "text": "Melamban bukanlah hal yang tabu"},
+                {"time": 165, "text": "Kadang itu yang kau butuh"},
+                {"time": 170, "text": "Bersandar, hibahkan bebanmu"},
+                {"time": 177, "text": "Tak perlu kau berhenti kurasi"},
+                {"time": 185, "text": "Ini hanya sementara"},
+                {"time": 189, "text": "Bukan ujung dari rencana"},
+                {"time": 196, "text": "Jalanmukan sepanjang niatmu"},
+                {"time": 203, "text": "Simpan tegar dalam hati "},
+                {"time": 208, "text": "29 kau terus mencari"},
+                {"time": 215, "text": "♪"},
+                {"time": 251, "text": "Sebutlah nama-Nya"},
+                {"time": 256, "text": "Tetap dijalan-Nya"},
+                {"time": 260, "text": "Kelak kau mengingat"},
+                {"time": 265, "text": "Kau akan teringat"},
+                {"time": 270, "text": "Sebutlah nama-Nya"},
+                {"time": 274, "text": "Tetap dijalan-Nya"},
+                {"time": 279, "text": "Kelak kau mengingat"},
+                {"time": 284, "text": "Kau akan teringat"},
+                {"time": 289, "text": "Sebutlah nama-Nya"},
+                {"time": 293, "text": "Tetap dijalan-Nya"},
+                {"time": 298, "text": "Kelak kau mengingat"},
+                {"time": 303, "text": "Kau akan teringat"},
+                {"time": 308, "text": "Sebutkanlah nama-Nya"},
+                {"time": 312, "text": "Resapilah jalan-Nya"},
+                {"time": 317, "text": "Kelak kau mengingat"},
+                {"time": 322, "text": "Kau akan teringat"},
+                {"time": 329, "text": "♪"},
+                {"time": 348, "text": "Terus berenang"},
+                {"time": 352, "text": "Lanjutlah mendaki"},
+                {"time": 359, "text": "♪"},
+                {"time": 367, "text": "Terus berenang"},
+                {"time": 371, "text": "Lanjutlah mendaki"},
+                {"time": 378, "text": "♪"},
+                {"time": 386, "text": "Terus berenang"},
+                {"time": 390, "text": "Lanjutlah mendaki"},
+                {"time": 396, "text": "♪"},
+                {"time": 405, "text": "Terus berenang"},
+                {"time": 409, "text": "Lanjutlah mendaki"}
+            ]'
+          >
+            <button class="song-play-btn" aria-label="Play 33x">
+              <i class="fas fa-play"></i>
+            </button>
+            <div class="song-info">
+              <span class="song-name">33x</span>
+              <span class="song-duration">7:14</span>
             </div>
-
-            <div class="song-item" id="song-2" data-lyrics="Dinding yang mulai berjamur\nSetengah dua dan ku butuh tidur\nIsi kepalaku tak lebih penuh\nDari Transjakarta kemarin subuh\n\nMulai hari ini saja\nBerhenti menyaksikan polahmu\nTak apa jika semuanya terlewat\nTak pernah berdampak penting bagiku" data-lyrics-file="lyrics/pikiran_yang_matang.html" data-chord-file="chord/pikiran-yang-matang.html" data-audio="music/pikiran-yang-matang.mp3" data-lyrics-sync='[
-                {"time": 0, "text": "Dinding yang mulai berjamur"},
-                {"time": 3, "text": "Setengah dua dan ku butuh tidur"},
-                {"time": 6, "text": "Isi kepalaku tak lebih penuh"},
-                {"time": 9, "text": "Dari Transjakarta kemarin subuh"},
-                {"time": 13, "text": ""},
-                {"time": 15, "text": "Mulai hari ini saja"},
-                {"time": 18, "text": "Berhenti menyaksikan polahmu"},
-                {"time": 21, "text": "Tak apa jika semuanya terlewat"},
-                {"time": 24, "text": "Tak pernah berdampak penting bagiku"},
-                {"time": 28, "text": ""},
-                {"time": 30, "text": "Hey"},
-                {"time": 32, "text": "Aku tak perlu kenal dirimu"},
-                {"time": 35, "text": "Atau membaca tulisanmu"},
-                {"time": 38, "text": "Kuharap semua tetap begitu"},
-                {"time": 41, "text": "Banyak yang butuhkan perhatianku"}
-            ]'>
-                <button class="song-play-btn" aria-label="Play Pikiran Yang Matang">
-                    <i class="fas fa-play"></i>
-                </button>
-                <div class="song-info">
-                    <span class="song-name">Pikiran Yang Matang</span>
-                    <span class="song-duration">4:28</span>
-                </div>
-                <div class="song-actions">
-                    <button class="btn-lyrics" data-song="2">LYRICS</button>
-                    <button class="btn-chord" data-song="2">CHORD</button>
-                </div>
+            <div class="song-actions">
+              <button class="btn-lyrics" data-song="1">LYRICS</button>
+              <button class="btn-chord" data-song="1">CHORD</button>
             </div>
+          </div>
 
-            <div class="song-item" id="song-3" data-lyrics="Tumbuhlah mendaki\nSeribu upaya kan kau nikmati\nBesok hari senin\nKutemani senyummu seperti kemarin\n\nSilih berganti ruang kau penuhi\nKu perlu hadir di semua yang kau tangisi\nPanggil aku kapanpun kutemani\nPastikan riuh akhiri malammu lagi" data-lyrics-file="lyrics/pastikan_riuh_akhiri_malammu.html" data-chord-file="chord/pastikan-riuh-akhiri-malammu.html" data-audio="music/pastikan-riuh-akhiri-malammu.mp3" data-lyrics-sync='[
-                {"time": 0, "text": "Tumbuhlah mendaki"},
-                {"time": 3, "text": "Seribu upaya kan kau nikmati"},
-                {"time": 6, "text": "Besok hari senin"},
-                {"time": 9, "text": "Kutemani senyummu seperti kemarin"},
-                {"time": 13, "text": ""},
-                {"time": 15, "text": "Silih berganti ruang kau penuhi"},
-                {"time": 19, "text": "Ku perlu hadir di semua yang kau tangisi"},
-                {"time": 23, "text": "Panggil aku kapanpun kutemani"},
-                {"time": 27, "text": "Pastikan riuh akhiri malammu lagi"},
-                {"time": 31, "text": ""},
-                {"time": 33, "text": "Melantunlah semerdu mungkin"},
-                {"time": 37, "text": "Merdumu yang buatku pulih"},
-                {"time": 41, "text": "Genggam jariku seeratnya"},
-                {"time": 45, "text": "Kubuat angin berpihak gerak searah"}
-            ]'>
-                <button class="song-play-btn" aria-label="Play Pastikan Riuh Akhiri Malammu">
-                    <i class="fas fa-play"></i>
-                </button>
-                <div class="song-info">
-                    <span class="song-name">Pastikan Riuh Akhiri Malammu</span>
-                    <span class="song-duration">3:52</span>
-                </div>
-                <div class="song-actions">
-                    <button class="btn-lyrics" data-song="3">LYRICS</button>
-                    <button class="btn-chord" data-song="3">CHORD</button>
-                </div>
+          <div
+            class="song-item"
+            id="song-2"
+            data-lyrics="Dinding yang mulai berjamur\nSetengah dua dan ku butuh tidur\nIsi kepalaku tak lebih penuh\nDari Transjakarta kemarin subuh\n\nMulai hari ini saja\nBerhenti menyaksikan polahmu\nTak apa jika semuanya terlewat\nTak pernah berdampak penting bagiku"
+            data-lyrics-file="lyrics/pikiran_yang_matang.html"
+            data-chord-file="chord/pikiran-yang-matang.html"
+            data-audio="music/pikiran-yang-matang.mp3"
+            data-lyrics-sync='[
+                {"time": 2, "text": "Dinding yang mulai berjamur"},
+                {"time": 6, "text": "Setengah dua dan ku butuh tidur"},
+                {"time": 11, "text": "Isi kepalaku tak lebih penuh"},
+                {"time": 16, "text": "Dari Transjakarta kemarin subuh"},
+                {"time": 30, "text": "Mulai hari ini saja"},
+                {"time": 35, "text": "Berhenti menyaksikan polahmu"},
+                {"time": 40, "text": "Tak apa jika semuanya terlewat"},
+                {"time": 45, "text": "Tak pernah berdampak penting bagiku"},
+                {"time": 49, "text": "Hey"},
+                {"time": 51, "text": "Aku tak perlu kenal dirimu"},
+                {"time": 56, "text": "Atau membaca tulisanmu"},
+                {"time": 59, "text": "Kuharap semua tetap begitu"},
+                {"time": 63, "text": "Banyak yang butuhkan perhatianku dan"},
+                {"time": 69, "text": "Hey"},
+                {"time": 70, "text": "Kau pernah sita semua waktuku"},
+                {"time": 75, "text": "Dan tak kembalikan satupun"},
+                {"time": 78, "text": "Hidupmu biar kau yang tahu"},
+                {"time": 82, "text": "Banyak yang butuhkan perhatianku"},
+                {"time": 93, "text": "Hari ini tak lebih seru"},
+                {"time": 98, "text": "Hari ini tak banyak terganggu"},
+                {"time": 102, "text": "Hari ini oh biasa saja"},
+                {"time": 107, "text": "Makin nyaman jauh dari drama"},
+                {"time": 112, "text": "Hey"},
+                {"time": 113, "text": "Aku tak perlu kenal dirimu"},
+                {"time": 118, "text": "Atau membaca tulisanmu"},
+                {"time": 122, "text": "Kuharap semua tetap begitu"},
+                {"time": 125, "text": "Banyak yang butuhkan perhatianku dan"},
+                {"time": 131, "text": "Hey"},
+                {"time": 133, "text": "Kau pernah sita semua waktuku"},
+                {"time": 138, "text": "Dan tak kembalikan satupun"},
+                {"time": 141, "text": "Hidupmu biar kau yang tahu"},
+                {"time": 144, "text": "Banyak yang butuhkan perhatianku"},
+                {"time": 153, "text": "Dilaut yang tenang"},
+                {"time": 157, "text": "Dan pikiran yang matang"},
+                {"time": 160, "text": "Dan semua umpatan kuredam"},
+                {"time": 164, "text": "Kan kutuai semua yang kutanam"},
+                {"time": 172, "text": "Di laut yang tenang"},
+                {"time": 176, "text": "Dan pikiran yang matang"},
+                {"time": 179, "text": "Dan semua umpatan kuredam"},
+                {"time": 183, "text": "Kan kutuai semua yang kutanam"},
+                {"time": 188, "text": "Oh dan"}
+
+            ]'
+          >
+            <button class="song-play-btn" aria-label="Play Pikiran Yang Matang">
+              <i class="fas fa-play"></i>
+            </button>
+            <div class="song-info">
+              <span class="song-name">Pikiran Yang Matang</span>
+              <span class="song-duration">3:12</span>
             </div>
-
-            <div class="song-item" id="song-4" data-lyrics="Peranmu selesai\nBebas semua tugas namun kuingat\nKan slalu kuingat\n\nTemani tumbuhku\nKembangkan tingkahku\nSemua kuingat\nDalam dan lekat" data-lyrics-file="lyrics/kalibata_2012.html" data-chord-file="chord/kalibata-2012.html" data-audio="music/kalibata-2012.mp3" data-lyrics-sync='[
-                {"time": 0, "text": "Peranmu selesai"},
-                {"time": 3, "text": "Bebas semua tugas namun kuingat"},
-                {"time": 6, "text": "Kan slalu kuingat"},
-                {"time": 9, "text": ""},
-                {"time": 11, "text": "Temani tumbuhku"},
-                {"time": 14, "text": "Kembangkan tingkahku"},
-                {"time": 17, "text": "Semua kuingat"},
-                {"time": 20, "text": "Dalam dan lekat"},
-                {"time": 23, "text": ""},
-                {"time": 25, "text": "Diantara takbir"},
-                {"time": 28, "text": "Pejam mataku sebutkan namamu hadir"},
-                {"time": 32, "text": "Muncul rangkaian ribuan cerita penting"},
-                {"time": 36, "text": "Yang kuinginkan kau ada dalam abadi"}
-            ]'>
-                <button class="song-play-btn" aria-label="Play Kalibata,2012">
-                    <i class="fas fa-play"></i>
-                </button>
-                <div class="song-info">
-                    <span class="song-name">Kalibata,2012</span>
-                    <span class="song-duration">4:15</span>
-                </div>
-                <div class="song-actions">
-                    <button class="btn-lyrics" data-song="4">LYRICS</button>
-                    <button class="btn-chord" data-song="4">CHORD</button>
-                </div>
+            <div class="song-actions">
+              <button class="btn-lyrics" data-song="2">LYRICS</button>
+              <button class="btn-chord" data-song="2">CHORD</button>
             </div>
+          </div>
 
+          <div
+            class="song-item"
+            id="song-3"
+            data-lyrics="Tumbuhlah mendaki\nSeribu upaya kan kau nikmati\nBesok hari senin\nKutemani senyummu seperti kemarin\n\nSilih berganti ruang kau penuhi\nKu perlu hadir di semua yang kau tangisi\nPanggil aku kapanpun kutemani\nPastikan riuh akhiri malammu lagi"
+            data-lyrics-file="lyrics/pastikan_riuh_akhiri_malammu.html"
+            data-chord-file="chord/pastikan-riuh-akhiri-malammu.html"
+            data-audio="music/pastikan-riuh-akhiri-malammu.mp3"
+            data-lyrics-sync='[
+                {"time": 1, "text": "Tumbuhlah mendaki"},
+                {"time": 9, "text": "Seribu upaya kan kau nikmati"},
+                {"time": 18, "text": "Besok hari senin"},
+                {"time": 27, "text": "Kutemani senyummu seperti kemarin"},
+                {"time": 36, "text": "Silih berganti ruang kau penuhi"},
+                {"time": 44, "text": "Ku perlu hadir di semua yang kau tangisi"},
+                {"time": 53, "text": "Panggil aku kapanpun kutemani"},
+                {"time": 62, "text": "Pastikan riuh akhiri malammu lagi"},
+                {"time": 71, "text": "Melantunlah semerdu mungkin (melantunlah)"},
+                {"time": 80, "text": "Merdumu yang buatku pulih (melantunlah)"},
+                {"time": 88, "text": "Genggam jariku seeratnya (melantunlah)"},
+                {"time": 97, "text": "Kubuat angin berpihak gerak searah "},
+                {"time": 106, "text": "♪"},
+                {"time": 141, "text": "Silih berganti ruang kau penuhi"},
+                {"time": 149, "text": "Ku perlu hadir di semua yang kau tangisi"},
+                {"time": 158, "text": "Panggil aku kapanpun kutemani"},
+                {"time": 167, "text": "Pastikan riuh akhiri malammu lagi"},
+                {"time": 176, "text": "Melantunlah semerdu mungkin (melantunlah)"},
+                {"time": 185, "text": "Merdumu yang buatku pulih (melantunlah)"},
+                {"time": 193, "text": "Genggam jariku seeratnya (melantunlah)"},
+                {"time": 202, "text": "Kubuat angin berpihak gerak searah "},
+                {"time": 211, "text": "Melantunlah semerdu mungkin (melantunlah)"},
+                {"time": 219, "text": "Merdumu yang buatku pulih (melantunlah)"},
+                {"time": 228, "text": "Genggam jariku seeratnya (melantunlah)"},
+                {"time": 237, "text": "Kubuat angin berpihak gerak searah "}
+            ]'
+          >
+            <button
+              class="song-play-btn"
+              aria-label="Play Pastikan Riuh Akhiri Malammu"
+            >
+              <i class="fas fa-play"></i>
+            </button>
+            <div class="song-info">
+              <span class="song-name">Pastikan Riuh Akhiri Malammu</span>
+              <span class="song-duration">4:12</span>
+            </div>
+            <div class="song-actions">
+              <button class="btn-lyrics" data-song="3">LYRICS</button>
+              <button class="btn-chord" data-song="3">CHORD</button>
+            </div>
+          </div>
+
+          <div
+            class="song-item"
+            id="song-4"
+            data-lyrics="Peranmu selesai\nBebas semua tugas namun kuingat\nKan slalu kuingat\n\nTemani tumbuhku\nKembangkan tingkahku\nSemua kuingat\nDalam dan lekat"
+            data-lyrics-file="lyrics/kalibata_2012.html"
+            data-chord-file="chord/kalibata-2012.html"
+            data-audio="music/kalibata-2012.mp3"
+            data-lyrics-sync='[
+                {"time": 0, "text": "INTRO"},
+                {"time": 38, "text": "Peranmu selesai"},
+                {"time": 42, "text": "Bebas semua tugas"},
+                {"time": 46, "text": "Namun, kuingat"},
+                {"time": 50, "text": "Kan slalu kuingat"},
+                {"time": 56, "text": "Temani tumbuhku"},
+                {"time": 60, "text": "Kembangkan tingkahku"},
+                {"time": 63, "text": "Semua kuingat"},
+                {"time": 68, "text": "Dalam dan lekat"},
+                {"time": 70, "text": "Diantara takbir"},
+                {"time": 75, "text": "Pejam mataku sebutkan namamu hadir"},
+                {"time": 84, "text": "Muncul rangkaian ribuan cerita penting"},
+                {"time": 92, "text": "Yang kuinginkan kau ada dalam abadi"},
+                {"time": 100, "text": "Semua jalur hidupku berubah dini hari itu"},
+                {"time": 109, "text": "Sebatang pertama"},
+                {"time": 114, "text": "Juga ulah lainnya"},
+                {"time": 117, "text": "Semua kuingat"},
+                {"time": 121, "text": "Dalam dan lekat"},
+                {"time": 127, "text": "Selera musikmu"},
+                {"time": 132, "text": "Membuka kelambu"},
+                {"time": 135, "text": "Telah membentuk"},
+                {"time": 138, "text": "Oh, padat telingaku"},
+                {"time": 145, "text": "Bolehkah kugunakan nama depanmu kelak"},
+                {"time": 153, "text": "Pastikan ku sematkan biar menular"},
+                {"time": 162, "text": "Hingga saat ini tiap langkahku tlah"},
+                {"time": 168, "text": "Jauhi beragam tepi"},
+                {"time": 175, "text": "Terpujilah mandiri dihati"},
+                {"time": 180, "text": "Sgala hikmah dari kesalahan lama"},
+                {"time": 186, "text": "Kini tak lagi bebani"},
+                {"time": 192, "text": "Terangi kesendirian lagi"},
+                {"time": 198, "text": "Rentan lambat, ringkih terasa seperti"},
+                {"time": 204, "text": "Dia tak berpihak lagi"},
+                {"time": 210, "text": "Kerap pedih datang trus temani"},
+                {"time": 216, "text": "Kurasa batinku takkan pernah siap"},
+                {"time": 221, "text": "Terima salam pamitmu"},
+                {"time": 228, "text": "Kau tahu kau yang tlah mengubahku"},
+                {"time": 237, "text": "♪"}
+
+            ]'
+          >
+            <button class="song-play-btn" aria-label="Play Kalibata,2012">
+              <i class="fas fa-play"></i>
+            </button>
+            <div class="song-info">
+              <span class="song-name">Kalibata , 2012</span>
+              <span class="song-duration">5:01</span>
+            </div>
+            <div class="song-actions">
+              <button class="btn-lyrics" data-song="4">LYRICS</button>
+              <button class="btn-chord" data-song="4">CHORD</button>
+            </div>
+          </div>
         </div>
 
         <!-- LYRICS / CHORD PANEL -->
         <div class="lyrics-panel" id="lyrics-panel">
-            <h3>
-                Lyrics / Chord
-                <span class="lyrics-label">LYRICS</span>
-            </h3>
-            <p class="lyrics-hint">Pilih lagu dan klik "LYRICS" atau "CHORD" untuk melihat.</p>
-            <div class="lyrics-content" id="lyrics-content">
-                <div class="lyric-line">Risalah terikatnya</div>
-                <div class="lyric-line">Batin dan raga yang mengunci</div>
-                <div class="lyric-line">Diatas sang maha daya</div>
-                <div class="lyric-line">Semua kendali terambil alih</div>
-                <div class="lyric-line">Jikalau kau keluhkan</div>
-                <div class="lyric-line">Dengung sumbang yang mengganggu</div>
-                <div class="lyric-line">Buka lagi visimu</div>
-                <div class="lyric-line">Kau tahu mana urutan satu</div>
-            </div>
-            <div class="center">
-                <a href="#" class="more-btn" id="btn-view-full-lyrics">VIEW FULL</a>
-            </div>
+          <h3>
+            Lyrics / Chord
+            <span class="lyrics-label">LYRICS</span>
+          </h3>
+          <p class="lyrics-hint">
+            Pilih lagu dan klik "LYRICS" atau "CHORD" untuk melihat.
+          </p>
+          <div class="lyrics-content" id="lyrics-content"></div>
+          <div class="center">
+            <a href="#" class="more-btn" id="btn-view-full-lyrics">VIEW FULL</a>
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
-</section>
+    <!-- LISTEN ON -->
+    <section class="page-section" id="listen-on">
+      <h2 class="section-title">Listen On</h2>
 
-<!-- LISTEN ON -->
-<section class="page-section" id="listen-on">
-    <h2 class="section-title">Listen On</h2>
+      <div class="platform-icons">
+        <a
+          href="https://open.spotify.com/intl-id/artist/0NbKRRBuiIUwS9irPvi7wD"
+          target="_blank"
+          class="platform-link"
+          id="platform-spotify"
+        >
+          <i class="fa-brands fa-spotify"></i>
+          <span>Spotify</span>
+        </a>
+        <a
+          href="https://music.apple.com/id/artist/perunggu/1489252835"
+          target="_blank"
+          class="platform-link"
+          id="platform-apple"
+        >
+          <i class="fa-brands fa-apple"></i>
+          <span>Apple Music</span>
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCTkiKmLQPAC_pR9Nbnc-4IA"
+          target="_blank"
+          class="platform-link"
+          id="platform-youtube"
+        >
+          <i class="fa-brands fa-youtube"></i>
+          <span>YouTube</span>
+        </a>
+        <a
+          href="https://soundcloud.com/perunggu-music"
+          target="_blank"
+          class="platform-link"
+          id="platform-soundcloud"
+        >
+          <i class="fa-brands fa-soundcloud"></i>
+          <span>SoundCloud</span>
+        </a>
+      </div>
+    </section>
 
-    <div class="platform-icons">
-        <a href="https://spotify.com" target="_blank" class="platform-link" id="platform-spotify">
-            <i class="fa-brands fa-spotify"></i>
-            <span>Spotify</span>
-        </a>
-        <a href="https://music.apple.com" target="_blank" class="platform-link" id="platform-apple">
-            <i class="fa-brands fa-apple"></i>
-            <span>Apple Music</span>
-        </a>
-        <a href="https://youtube.com" target="_blank" class="platform-link" id="platform-youtube">
-            <i class="fa-brands fa-youtube"></i>
-            <span>YouTube</span>
-        </a>
-        <a href="https://soundcloud.com" target="_blank" class="platform-link" id="platform-soundcloud">
-            <i class="fa-brands fa-soundcloud"></i>
-            <span>SoundCloud</span>
-        </a>
-        <a href="https://deezer.com" target="_blank" class="platform-link" id="platform-deezer">
-            <i class="fa-brands fa-deezer"></i>
-            <span>Deezer</span>
-        </a>
-    </div>
-</section>
-
-<!-- FOOTER -->
-<footer id="main-footer">
-    <div class="footer-left">
-        <img src="images/logo.jpeg" alt="Perunggu Logo">
+    <!-- FOOTER -->
+    <footer id="main-footer">
+      <div class="footer-left">
+        <img src="images/logo.jpeg" alt="Perunggu Logo" />
         <div class="social">
-            <a href="https://instagram.com" target="_blank" aria-label="Instagram" id="social-instagram">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://youtube.com" target="_blank" aria-label="YouTube" id="social-youtube">
-                <i class="fa-brands fa-youtube"></i>
-            </a>
-            <a href="https://spotify.com" target="_blank" aria-label="Spotify" id="social-spotify">
-                <i class="fa-brands fa-spotify"></i>
-            </a>
-            <a href="https://tiktok.com" target="_blank" aria-label="TikTok" id="social-tiktok">
-                <i class="fa-brands fa-tiktok"></i>
-            </a>
+          <a
+            href="https://www.instagram.com/perunggu_/"
+            target="_blank"
+            aria-label="Instagram"
+            id="social-instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCTkiKmLQPAC_pR9Nbnc-4IA"
+            target="_blank"
+            aria-label="YouTube"
+            id="social-youtube"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a
+            href="https://open.spotify.com/intl-id/artist/0NbKRRBuiIUwS9irPvi7wD"
+            target="_blank"
+            aria-label="Spotify"
+            id="social-spotify"
+          >
+            <i class="fa-brands fa-spotify"></i>
+          </a>
+          <a
+            href="https://www.tiktok.com/@perunggu__"
+            target="_blank"
+            aria-label="TikTok"
+            id="social-tiktok"
+          >
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
         </div>
-    </div>
-    <p>&copy; Copyright 2026 PERUNGGU</p>
-</footer>
+      </div>
+      <p>&copy; Copyright 2026 PERUNGGU</p>
+    </footer>
 
-<script>
-    // Hamburger menu toggle
-    const menuToggle = document.getElementById('menu-toggle');
-    const mainNav = document.getElementById('main-nav');
+    <script>
+      // Hamburger menu toggle
+      const menuToggle = document.getElementById("menu-toggle");
+      const mainNav = document.getElementById("main-nav");
 
-    menuToggle.addEventListener('click', () => {
-        menuToggle.classList.toggle('active');
-        mainNav.classList.toggle('open');
-    });
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        mainNav.classList.toggle("open");
+      });
 
-    mainNav.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            menuToggle.classList.remove('active');
-            mainNav.classList.remove('open');
+      mainNav.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          menuToggle.classList.remove("active");
+          mainNav.classList.remove("open");
         });
-    });
+      });
 
-    // Audio player global
-    let currentAudio = null;
-    let currentPlayBtn = null;
-    let lyricsInterval = null;
-    let currentLyricsSync = null;
+      // Audio player global
+      let currentAudio = null;
+      let currentPlayBtn = null;
+      let lyricsInterval = null;
+      let currentLyricsSync = null;
 
-    // Song play button toggle
-    document.querySelectorAll('.song-play-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const songItem = btn.closest('.song-item');
-            const audioSrc = songItem.getAttribute('data-audio');
+      // Song play button toggle
+      document.querySelectorAll(".song-play-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const songItem = btn.closest(".song-item");
+          const audioSrc = songItem.getAttribute("data-audio");
 
-            // Jika ada audio yang sedang diputar
-            if (currentAudio && currentAudio !== btn) {
-                // Pause audio sebelumnya
-                const prevAudio = currentPlayBtn.audioElement;
-                if (prevAudio) {
-                    prevAudio.pause();
-                }
-                // Reset tombol sebelumnya
-                currentPlayBtn.innerHTML = '<i class="fas fa-play"></i>';
-                currentPlayBtn.closest('.song-item').classList.remove('playing');
-                
-                // Stop lyrics sync
-                if (lyricsInterval) {
-                    clearInterval(lyricsInterval);
-                    lyricsInterval = null;
-                }
+          // Jika ada audio yang sedang diputar
+          if (currentAudio && currentAudio !== btn) {
+            // Pause audio sebelumnya
+            const prevAudio = currentPlayBtn.audioElement;
+            if (prevAudio) {
+              prevAudio.pause();
             }
+            // Reset tombol sebelumnya
+            currentPlayBtn.innerHTML = '<i class="fas fa-play"></i>';
+            currentPlayBtn.closest(".song-item").classList.remove("playing");
 
-            // Toggle play/pause untuk audio saat ini
-            if (!btn.audioElement) {
-                // Buat audio element baru
-                btn.audioElement = new Audio(audioSrc);
-                
-                // Event ketika audio selesai
-                btn.audioElement.addEventListener('ended', () => {
-                    btn.innerHTML = '<i class="fas fa-play"></i>';
-                    songItem.classList.remove('playing');
-                    
-                    // Stop lyrics sync
-                    if (lyricsInterval) {
-                        clearInterval(lyricsInterval);
-                        lyricsInterval = null;
-                    }
-                    
-                    // Reset highlight
-                    document.querySelectorAll('.lyric-line').forEach(line => {
-                        line.classList.remove('active', 'past');
-                    });
-                });
+            // Stop lyrics sync
+            if (lyricsInterval) {
+              clearInterval(lyricsInterval);
+              lyricsInterval = null;
             }
+          }
 
-            if (btn.audioElement.paused) {
-                // Play audio
-                btn.audioElement.play();
-                btn.innerHTML = '<i class="fas fa-pause"></i>';
-                songItem.classList.add('playing');
-                currentAudio = btn;
-                currentPlayBtn = btn;
-                
-                // Start lyrics sync jika ada data lyrics-sync
-                const lyricsSync = songItem.getAttribute('data-lyrics-sync');
-                if (lyricsSync && currentViewMode === 'lyrics') {
-                    try {
-                        currentLyricsSync = JSON.parse(lyricsSync);
-                        startLyricsSync(btn.audioElement);
-                    } catch (e) {
-                        console.error('Error parsing lyrics sync data:', e);
-                    }
-                }
-            } else {
-                // Pause audio
-                btn.audioElement.pause();
-                btn.innerHTML = '<i class="fas fa-play"></i>';
-                songItem.classList.remove('playing');
-                
-                // Stop lyrics sync
-                if (lyricsInterval) {
-                    clearInterval(lyricsInterval);
-                    lyricsInterval = null;
-                }
+          // Toggle play/pause untuk audio saat ini
+          if (!btn.audioElement) {
+            // Buat audio element baru
+            btn.audioElement = new Audio(audioSrc);
+
+            // Event ketika audio selesai
+            btn.audioElement.addEventListener("ended", () => {
+              btn.innerHTML = '<i class="fas fa-play"></i>';
+              songItem.classList.remove("playing");
+
+              // Stop lyrics sync
+              if (lyricsInterval) {
+                clearInterval(lyricsInterval);
+                lyricsInterval = null;
+              }
+
+              // Reset highlight
+              document.querySelectorAll(".lyric-line").forEach((line) => {
+                line.classList.remove("active", "past");
+              });
+            });
+          }
+
+          if (btn.audioElement.paused) {
+            // Play audio
+            btn.audioElement.play();
+            btn.innerHTML = '<i class="fas fa-pause"></i>';
+            songItem.classList.add("playing");
+            currentAudio = btn;
+            currentPlayBtn = btn;
+
+            // Start lyrics sync jika ada data lyrics-sync
+            const lyricsSync = songItem.getAttribute("data-lyrics-sync");
+            if (lyricsSync && currentViewMode === "lyrics") {
+              try {
+                currentLyricsSync = JSON.parse(lyricsSync);
+                startLyricsSync(btn.audioElement);
+              } catch (e) {
+                console.error("Error parsing lyrics sync data:", e);
+              }
             }
+          } else {
+            // Pause audio
+            btn.audioElement.pause();
+            btn.innerHTML = '<i class="fas fa-play"></i>';
+            songItem.classList.remove("playing");
+
+            // Stop lyrics sync
+            if (lyricsInterval) {
+              clearInterval(lyricsInterval);
+              lyricsInterval = null;
+            }
+          }
         });
-    });
+      });
 
-    // Function untuk synchronized lyrics
-    function startLyricsSync(audioElement) {
+      // Function untuk synchronized lyrics
+      function startLyricsSync(audioElement) {
         // Clear interval sebelumnya jika ada
         if (lyricsInterval) {
-            clearInterval(lyricsInterval);
+          clearInterval(lyricsInterval);
         }
 
         // Update lyrics setiap 100ms
         lyricsInterval = setInterval(() => {
-            if (!audioElement || audioElement.paused) {
-                clearInterval(lyricsInterval);
-                lyricsInterval = null;
-                return;
-            }
+          if (!audioElement || audioElement.paused) {
+            clearInterval(lyricsInterval);
+            lyricsInterval = null;
+            return;
+          }
 
-            const currentTime = audioElement.currentTime;
-            updateLyricsHighlight(currentTime);
+          const currentTime = audioElement.currentTime;
+          updateLyricsHighlight(currentTime);
         }, 100);
-    }
+      }
 
-    function updateLyricsHighlight(currentTime) {
+      function updateLyricsHighlight(currentTime) {
         if (!currentLyricsSync) return;
 
-        const lyricsLines = document.querySelectorAll('.lyric-line');
+        const lyricsLines = document.querySelectorAll(".lyric-line");
         let currentIndex = -1;
 
         // Cari baris lirik yang sedang aktif
         for (let i = 0; i < currentLyricsSync.length; i++) {
-            if (currentTime >= currentLyricsSync[i].time) {
-                currentIndex = i;
-            } else {
-                break;
-            }
+          if (currentTime >= currentLyricsSync[i].time) {
+            currentIndex = i;
+          } else {
+            break;
+          }
         }
 
         // Update highlight
         lyricsLines.forEach((line, index) => {
-            if (index === currentIndex) {
-                line.classList.add('active');
-                line.classList.remove('past');
-                
-                // Auto scroll ke baris aktif
-                line.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            } else if (index < currentIndex) {
-                line.classList.remove('active');
-                line.classList.add('past');
-            } else {
-                line.classList.remove('active', 'past');
-            }
+          if (index === currentIndex) {
+            line.classList.add("active");
+            line.classList.remove("past");
+
+            // Auto scroll ke baris aktif
+            line.scrollIntoView({ behavior: "smooth", block: "center" });
+          } else if (index < currentIndex) {
+            line.classList.remove("active");
+            line.classList.add("past");
+          } else {
+            line.classList.remove("active", "past");
+          }
         });
-    }
+      }
 
-    // Lyrics button functionality
-    let currentLyricsFile = null;
-    let currentChordFile = null;
-    let currentViewMode = 'lyrics'; // 'lyrics' atau 'chord'
+      // Lyrics button functionality
+      let currentLyricsFile = null;
+      let currentChordFile = null;
+      let currentViewMode = "lyrics"; // 'lyrics' atau 'chord'
 
-    document.querySelectorAll('.btn-lyrics').forEach(btn => {
-        btn.addEventListener('click', () => {
-            // Reset all active states
-            document.querySelectorAll('.btn-lyrics, .btn-chord').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
+      document.querySelectorAll(".btn-lyrics").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          // Reset all active states
+          document
+            .querySelectorAll(".btn-lyrics, .btn-chord")
+            .forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
 
-            const songItem = btn.closest('.song-item');
-            const lyrics = songItem.getAttribute('data-lyrics');
-            const lyricsSync = songItem.getAttribute('data-lyrics-sync');
-            const songName = songItem.querySelector('.song-name').textContent;
-            const lyricsFile = songItem.getAttribute('data-lyrics-file');
+          const songItem = btn.closest(".song-item");
+          const lyrics = songItem.getAttribute("data-lyrics");
+          const lyricsSync = songItem.getAttribute("data-lyrics-sync");
+          const songName = songItem.querySelector(".song-name").textContent;
+          const lyricsFile = songItem.getAttribute("data-lyrics-file");
 
-            // Simpan link file lirik saat ini
-            currentLyricsFile = lyricsFile;
-            currentViewMode = 'lyrics';
+          // Simpan link file lirik saat ini
+          currentLyricsFile = lyricsFile;
+          currentViewMode = "lyrics";
 
-            // Parse lyrics sync data jika ada
-            if (lyricsSync) {
-                try {
-                    currentLyricsSync = JSON.parse(lyricsSync);
-                    displaySyncedLyrics(currentLyricsSync);
-                } catch (e) {
-                    // Fallback: create sync data from plain lyrics
-                    const lyricsLines = lyrics.split('\n');
-                    currentLyricsSync = lyricsLines.map((line, index) => ({
-                        time: index * 3, // Default 3 detik per baris
-                        text: line
-                    }));
-                    displaySyncedLyrics(currentLyricsSync);
-                }
-            } else {
-                // Create sync data from plain lyrics
-                const lyricsLines = lyrics.split('\n');
-                currentLyricsSync = lyricsLines.map((line, index) => ({
-                    time: index * 3, // Default 3 detik per baris
-                    text: line
-                }));
-                displaySyncedLyrics(currentLyricsSync);
+          // Parse lyrics sync data jika ada
+          if (lyricsSync) {
+            try {
+              currentLyricsSync = JSON.parse(lyricsSync);
+              displaySyncedLyrics(currentLyricsSync);
+            } catch (e) {
+              // Fallback: create sync data from plain lyrics
+              const lyricsLines = lyrics.split("\n");
+              currentLyricsSync = lyricsLines.map((line, index) => ({
+                time: index * 3, // Default 3 detik per baris
+                text: line,
+              }));
+              displaySyncedLyrics(currentLyricsSync);
             }
+          } else {
+            // Create sync data from plain lyrics
+            const lyricsLines = lyrics.split("\n");
+            currentLyricsSync = lyricsLines.map((line, index) => ({
+              time: index * 3, // Default 3 detik per baris
+              text: line,
+            }));
+            displaySyncedLyrics(currentLyricsSync);
+          }
 
-            document.querySelector('.lyrics-panel h3').innerHTML = songName + ' <span class="lyrics-label">LYRICS</span>';
+          document.querySelector(".lyrics-panel h3").innerHTML =
+            songName + ' <span class="lyrics-label">LYRICS</span>';
 
-            // Restart lyrics sync jika sedang playing
-            if (currentPlayBtn && currentPlayBtn.audioElement && !currentPlayBtn.audioElement.paused) {
-                startLyricsSync(currentPlayBtn.audioElement);
-            }
+          // Restart lyrics sync jika sedang playing
+          if (
+            currentPlayBtn &&
+            currentPlayBtn.audioElement &&
+            !currentPlayBtn.audioElement.paused
+          ) {
+            startLyricsSync(currentPlayBtn.audioElement);
+          }
         });
-    });
+      });
 
-    function displaySyncedLyrics(lyricsData) {
-        const lyricsContent = document.getElementById('lyrics-content');
-        lyricsContent.innerHTML = '';
-        
+      function displaySyncedLyrics(lyricsData) {
+        const lyricsContent = document.getElementById("lyrics-content");
+        lyricsContent.innerHTML = "";
+
         lyricsData.forEach((line, index) => {
-            const lineDiv = document.createElement('div');
-            lineDiv.className = 'lyric-line';
-            lineDiv.textContent = line.text || ' ';
-            lineDiv.setAttribute('data-time', line.time);
-            lineDiv.setAttribute('data-index', index);
-            lyricsContent.appendChild(lineDiv);
+          const lineDiv = document.createElement("div");
+          lineDiv.className = "lyric-line";
+          lineDiv.textContent = line.text || " ";
+          lineDiv.setAttribute("data-time", line.time);
+          lineDiv.setAttribute("data-index", index);
+          lyricsContent.appendChild(lineDiv);
         });
-    }
+      }
 
-    // Chord button functionality
-    document.querySelectorAll('.btn-chord').forEach(btn => {
-        btn.addEventListener('click', () => {
-            document.querySelectorAll('.btn-lyrics, .btn-chord').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
+      // Chord button functionality
+      document.querySelectorAll(".btn-chord").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document
+            .querySelectorAll(".btn-lyrics, .btn-chord")
+            .forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
 
-            const songItem = btn.closest('.song-item');
-            const songName = songItem.querySelector('.song-name').textContent;
-            const chordFile = songItem.getAttribute('data-chord-file');
+          const songItem = btn.closest(".song-item");
+          const songName = songItem.querySelector(".song-name").textContent;
+          const chordFile = songItem.getAttribute("data-chord-file");
+          const songId = songItem.getAttribute("id");
 
-            // Simpan link file chord saat ini
-            currentChordFile = chordFile;
-            currentViewMode = 'chord';
-            currentLyricsSync = null;
+          // Simpan link file chord saat ini
+          currentChordFile = chordFile;
+          currentViewMode = "chord";
+          currentLyricsSync = null;
 
-            // Stop lyrics sync
-            if (lyricsInterval) {
-                clearInterval(lyricsInterval);
-                lyricsInterval = null;
-            }
+          // Stop lyrics sync
+          if (lyricsInterval) {
+            clearInterval(lyricsInterval);
+            lyricsInterval = null;
+          }
 
-            document.getElementById('lyrics-content').textContent =
-                '[Intro] Am  F  C  G\n\n[Verse]\nAm            F\nBaris pertama lagu\nC             G\nBaris kedua lagu\n\n[Chorus]\nF             G\nBaris chorus\nAm            C\nBaris chorus kedua';
-            document.querySelector('.lyrics-panel h3').innerHTML = songName + ' <span class="lyrics-label">CHORD</span>';
+          // Chord data untuk setiap lagu
+          const chordData = {
+            'song-1': `[Intro]
+C G Em7
+C G Em7
+
+[Verse 1]
+C        Bm7    Em7
+Risalah terikatnya
+C              Bm7         Em7
+Batin dan raga yang mengunci
+C              Bm7   Em7
+Diatas Sang Maha Daya
+C              Bm7        Em7
+Semua kendali terambil alih
+C          Bm7      Em7
+Jikalau kau keluhkan
+C                Bm7          Em7
+Dengung sumbang yang mengganggu
+C         Bm7   Em7
+Buka lagi visimu
+C            Bm7  Em7   G
+Kau tahu mana urutan satu
+
+[Chorus]
+                 Fmaj7
+Diantara pusaran nirfungsi
+  Am
+Petakan semua lagi
+Fmaj7
+Titik tuju yang t'lah terpatri
+G                     Fmaj7
+Melamban bukanlah hal yang tabu
+Am
+Kadang itu yang kau butuh
+Fmaj7                  D
+Bersandar hibahkan bebanmu
+
+[Verse 2]
+D            C#m7   F#m7
+Rotasikan pandanganmu
+D            C#m7   F#m7
+Ambil sudut yang terbaru
+D            C#m7  F#m7
+Belum pernah kau coba
+D           C#m7   F#m7    D
+Lihat semua bukan dari matamu
+              C#m7  F#m7
+Kelak kau kan mengingat
+D             C#m7  F#m7
+Yang membawamu kesini
+D         C#m7  F#m7
+Kami pernah disitu
+D
+Di posisimu
+C#m7   F#m7   A
+Helakan kesahmu
+
+[Chorus]
+A                 Em
+Diantara pusaran nirfungsi
+F#m7
+Petakan semua lagi
+E
+Titik tuju yang t'lah terpatri
+A                     E
+Melamban bukanlah hal yang tabu
+G
+Kadang itu yang kau butuh
+D                       A
+Bersandar hibahkan bebanmu
+                      Em
+Tak perlu kau berhenti kurasi
+F#m7
+Ini hanya sementara
+E                     A
+Bukan ujung dari rencana
+                        Em
+Jalanmu kan sepanjang niatmu
+G
+Simpan tegar dalam hati
+D                           A
+Dua sembilan kau terus mencari
+E F#m7 E
+
+[Outro]
+A Em G D
+
+A
+Sebutlah namaNya
+Em
+Tetap di jalanNya
+F#m7
+Kelak kau mengingat
+E
+Kau akan teringat
+A
+Sebutlah namaNya
+Em
+Tetap di jalanNya
+G
+Kelak kau mengingat
+D
+Kau akan teringat
+A
+Sebutlah namaNya
+E
+Tetap di jalanNya
+F#m7
+Kelak kau mengingat
+E
+Kau akan teringat
+F#m7
+Sebutkanlah namaNya
+A
+Resapilah jalanNya
+Bm7
+Kelak kau mengingat
+Dm              A
+Kau akan teringat
+
+G
+
+A
+Terus berenang
+             G
+Lanjutlah mendaki
+A
+Terus berenang
+             G
+Lanjutlah mendaki
+A
+Terus berenang
+             G
+Lanjutlah mendaki
+A
+Terus berenang
+             G
+Lanjutlah mendaki
+A`,
+            'song-2': `[Verse 1]
+F#m           Bm
+ Dinding yang mulai berjamur
+F#m                 Bm
+ Setengah dua dan kubutuh tidur
+F#m            Bm
+ Isi kepalaku tak lebih penuh
+F#m                 Bm
+ Dari TransJakarta kemarin subuh
+
+[Instrument]
+A C#m D
+A E D
+
+[Verse 2]
+F#m         Bm
+ Mulai hari ini saja
+F#m                Bm
+ Berhenti menyaksikan polahmu
+F#m                Bm
+ Tak apa jika semuanya terlewat
+F#m                       Bm
+ Tak pernah berdampak penting bagiku
+
+[Chorus]
+A
+Hey...
+                        Em
+aku tak perlu kenal dirimu
+                     G
+Atau membaca tulisanmu
+Kuharap semua tetap begitu
+       D
+Banyak yang butuhkan perhatianku dan
+A
+Hey...
+                           Em
+kau pernah sita semua waktuku
+                           G
+Dan tak kembalikan satu pun
+Hidupmu biar kau yang tahu
+       D
+Banyak yang butuhkan perhatianku
+
+[Instrument]
+A C#m D
+
+[Bridge]
+Bm                    D                             
+Hari ini tak lebih seru
+D C#m Bm
+Hari ini tak banyak terganggu
+Bm
+Hari ini oh biasa saja
+MAKIN NYAMAN JAUH DARI DRAMA!!!
+
+[Chorus]
+A
+Hey...
+                        Em
+aku tak perlu kenal dirimu
+                     G
+Atau membaca tulisanmu
+Kuharap semua tetap begitu
+       D
+Banyak yang butuhkan perhatianku dan
+A
+Hey...
+                           Em
+kau pernah sita semua waktuku
+                           G
+Dan tak kembalikan satu pun
+Hidupmu biar kau yang tahu
+       D
+Banyak yang butuhkan perhatianku
+
+[Outro]
+A
+ Di laut yang tenang
+Em
+ Dan pikiran yang matang
+   G
+Dan sеmua umpatan yang kuredam
+    D
+Kan kutuai semua yang kutanam
+                             A                 Em
+(Di laut yang, di laut yang) Di laut yang tenang
+                                                G
+(Pikiran yang, pikiran yang) Pikiran yang matang
+dan semua umpatan kuredam
+       D
+Kan kutuai semua yang kutanam
+
+Oh, dan.`,
+            'song-3': `[Verse 1]
+A               C#m
+Tumbuhlah mendaki
+A            C#m
+Seribu upaya 'kan kau nikmati
+A              C#m
+Besok hari Senin
+A             Emaj7
+Kutemani senyummu seperti kemarin
+
+[Pre-Chorus]
+D#m7             G#m
+Silih berganti ruang kaupenuhi
+D#m7             G#m
+Ku perlu hadir di semua yang kau tangisi
+D#m7             G#m
+Panggil aku kapanpun kutemani
+D#m7             G#m             Cm7
+Pastikan riuh akhiri malammu lagi
+
+[Chorus]
+                 A#m7                 Cm7
+Melantunlah semerdu mungkin (melantunlah)
+                 A#m7                 Cm7
+Merdumu yang buatku pulih (melantunlah)
+                 A#m7                 Cm7
+Genggam jariku seeratnya (melantunlah)
+                 A#m7
+Kubuat angin berpihak gerak searah
+
+[Interlude]
+A               C#m
+A               C#m
+A               C#m
+A               C#m
+A               E
+
+[Pre-Chorus]
+D#m7             G#m
+Silih berganti ruang kaupenuhi
+D#m7             G#m
+Ku perlu hadir di semua yang kau tangisi
+D#m7             G#m
+Panggil aku kapanpun kutemani
+D#m7             G#m             Cm7
+Pastikan riuh akhiri malammu lagi
+
+[Chorus]
+                 A#m7                 Cm7
+Melantunlah semerdu mungkin (melantunlah)
+                 A#m7                 Cm7
+Merdumu yang buatku pulih (melantunlah)
+                 A#m7                 Cm7
+Genggam jariku seeratnya (melantunlah)
+                 A#m7                 Cm7
+Kubuat angin berpihak gerak searah
+
+[Chorus]
+                 A#m7                 Cm7
+Melantunlah semerdu mungkin (melantunlah)
+                 A#m7                 Cm7
+Merdumu yang buatku pulih (melantunlah)
+                 A#m7                 Cm7
+Genggam jariku seeratnya (melantunlah)
+                 A#m7           A
+Kubuat angin berpihak gerak searah`,
+            'song-4': `[Intro]
+Bm7 A Em7 2x
+
+[Verse 1]
+Bm7
+Peranmu selesai
+A                      Em7
+Bebas semua tugas namun kuingat
+    Em7
+Kan slalu kuingat
+Bm7
+Temani tumbuhku
+A                     Em7
+Kembangkan tingkahku semua kuingat
+    Em7
+Dalam dan lekat
+               G
+Diantara takbir
+
+[Pre Chorus 1]
+G              Bm     A           G
+Pejam mataku sebutkan namamu hadir
+G                Bm     A             G
+Muncul rangkaian ribuan cerita penting
+G               Bm      A        G
+Yang kuinginkan kau ada dalam abadi
+       Em           Bm          A        Bm7
+Semua jalur hidupku berubah dini hari itu
+
+[Verse 2]
+Bm7
+Sebatang pertama
+A                 Em7
+Juga ulah lainnya semua kuingat
+Em7
+Dalam dan lekat
+Bm7
+Selera musikmu
+A                     Em7
+Membuka kelambu telah membentuk
+      Em7
+Oh padat telingaku
+
+[Pre Chorus 2]
+G             Bm         A            G
+Bolehkah kugunakan nama depanmu kelak?
+G                     Bm        A
+Pasti kan kusematkan biar menular
+
+[Chorus]
+D
+Hingga saat ini tiap langkah ku tlah
+Dmaj7      Gmaj7
+Jauhi beragam tepi
+Fmaj7             E
+Terpujilah mandiri di hati
+D
+Sgala hikmah dari kesalahan lama
+Dmaj7      Gmaj7
+Kini tak lagi bebani
+Fmaj7           E
+Terangi kesendirian lagi
+D
+Rentan lamban ringkih terasa seperti
+Dmaj7         Gmaj7
+Dia tak berpihak lagi
+Fmaj7               E
+Kerap pedih datang trus temani
+D
+Kurasa batinku takkan pernah siap
+Dmaj7       Gmaj7
+Terima salam pamitmu
+Fmaj7                             D
+Kau tahu kau yang tlah mengubahku
+
+[Outro]
+D Dmaj7 Gmaj7 Fmaj7 2x
+Gmaj Fmaj7 D`
+          };
+
+          const chordContent = chordData[songId] || '[Intro] Am  F  C  G\n\n[Verse]\nAm            F\nBaris pertama lagu\nC             G\nBaris kedua lagu\n\n[Chorus]\nF             G\nBaris chorus\nAm            C\nBaris chorus kedua';
+
+          document.getElementById("lyrics-content").textContent = chordContent;
+          document.querySelector(".lyrics-panel h3").innerHTML =
+            songName + ' <span class="lyrics-label">CHORD</span>';
         });
-    });
+      });
 
-    // VIEW FULL button functionality
-    document.getElementById('btn-view-full-lyrics').addEventListener('click', (e) => {
-        e.preventDefault();
+      // VIEW FULL button functionality
+      document
+        .getElementById("btn-view-full-lyrics")
+        .addEventListener("click", (e) => {
+          e.preventDefault();
 
-        if (currentViewMode === 'lyrics' && currentLyricsFile) {
+          if (currentViewMode === "lyrics" && currentLyricsFile) {
             // Redirect ke halaman lirik full
             window.location.href = currentLyricsFile;
-        } else if (currentViewMode === 'chord' && currentChordFile) {
+          } else if (currentViewMode === "chord" && currentChordFile) {
             // Redirect ke halaman chord full
             window.location.href = currentChordFile;
-        } else {
-            alert('Silakan pilih lagu dan klik "LYRICS" atau "CHORD" terlebih dahulu.');
-        }
-    });
-</script>
-
-</body>
+          } else {
+            alert(
+              'Silakan pilih lagu dan klik "LYRICS" atau "CHORD" terlebih dahulu.',
+            );
+          }
+        });
+    </script>
+  </body>
 </html>

@@ -34,7 +34,17 @@
 
 <!-- HERO -->
 <section class="hero-home" id="hero-home">
-    <div class="hero-home-bg placeholder-img"></div>
+    <div class="hero-carousel">
+        <div class="hero-slide active">
+            <img src="images/background/backgroundhome (1).png" alt="Perunggu Hero 1">
+        </div>
+        <div class="hero-slide">
+            <img src="images/background/backgroundhome (2).png" alt="Perunggu Hero 2">
+        </div>
+        <div class="hero-slide">
+            <img src="images/background/backgroundhome (3).png" alt="Perunggu Hero 3">
+        </div>
+    </div>
     <div class="hero-home-overlay"></div>
     <div class="hero-home-content">
         <h1>PERUNGGU</h1>
@@ -48,10 +58,16 @@
             </a>
         </div>
     </div>
+    <button class="hero-nav hero-prev" id="hero-prev" aria-label="Previous slide">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="hero-nav hero-next" id="hero-next" aria-label="Next slide">
+        <i class="fas fa-chevron-right"></i>
+    </button>
     <div class="hero-dots">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
     </div>
 </section>
 
@@ -65,8 +81,8 @@
         <div class="glass-card now-playing" id="now-playing">
             <h2>Now Playing</h2>
             <div class="track">
-                <div class="track-cover placeholder-img">
-                    <i class="fas fa-music"></i>
+                <div class="track-cover">
+                    <img src="images/albums/memorandum.jpeg" alt="Memorandum Album Cover" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-sm);">
                 </div>
                 <div class="track-info">
                     <span class="track-title">33x</span>
@@ -78,13 +94,14 @@
             </div>
             <div class="progress-container">
                 <div class="progress-bar">
-                    <div class="progress" style="width: 0%"></div>
+                    <div class="progress" id="progress-bar" style="width: 0%"></div>
                 </div>
                 <div class="track-time">
-                    <span>0:00</span>
-                    <span>4:21</span>
+                    <span id="current-time">0:00</span>
+                    <span id="total-time">6:42</span>
                 </div>
             </div>
+            <audio id="audio-player" src="music/33x.mp3"></audio>
         </div>
 
         <!-- UPCOMING SHOWS -->
@@ -127,13 +144,13 @@
         <div class="glass-card merch-highlight" id="merch-highlight">
             <h2>Merch Highlight</h2>
             <div class="merch-featured">
-                <div class="merch-img placeholder-img">
-                    <i class="fas fa-tshirt"></i>
+                <div class="merch-img">
+                    <img src="images/merch/bandung.png" alt="Kaos Perjalanan Dalam Dinamika Bandung" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-md);">
                 </div>
                 <div class="merch-details">
-                    <h3>Kaos PERUNGGU Tour 2026</h3>
+                    <h3>Kaos Perjalanan Dalam Dinamika Bandung</h3>
                     <p>Limited edition tour merchandise</p>
-                    <span class="merch-price">Rp 250.000</span>
+                    <span class="merch-price">Rp 200.000</span>
                     <a href="shop.html" class="btn-shop" id="btn-shop-merch">Shop</a>
                 </div>
             </div>
@@ -143,13 +160,21 @@
         <div class="glass-card gallery-preview" id="gallery-preview">
             <h2>Gallery Preview</h2>
             <div class="gallery-grid-preview">
-                <div class="placeholder-img"><i class="fas fa-image"></i></div>
-                <div class="placeholder-img"><i class="fas fa-image"></i></div>
-                <div class="placeholder-img"><i class="fas fa-image"></i></div>
-                <div class="placeholder-img"><i class="fas fa-image"></i></div>
+                <div class="gallery-img">
+                    <img src="images/gallery/gallery1.png" alt="Gallery 1" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-sm);">
+                </div>
+                <div class="gallery-img">
+                    <img src="images/gallery/gallery2.png" alt="Gallery 2" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-sm);">
+                </div>
+                <div class="gallery-img">
+                    <img src="images/gallery/gallery3.png" alt="Gallery 3" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-sm);">
+                </div>
+                <div class="gallery-img">
+                    <img src="images/gallery/gallery4.png" alt="Gallery 4" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-sm);">
+                </div>
             </div>
             <div class="center">
-                <a href="about.html#behind-the-scene" class="more-btn" id="btn-view-gallery">VIEW GALLERY</a>
+                <a href="gallery.html" class="more-btn" id="btn-view-gallery">VIEW GALLERY</a>
             </div>
         </div>
 
@@ -162,16 +187,16 @@
     <div class="footer-left">
         <img src="images/logo.jpeg" alt="Perunggu Logo">
         <div class="social">
-            <a href="https://instagram.com" target="_blank" aria-label="Instagram" id="social-instagram">
+            <a href="https://www.instagram.com/perunggu_/" target="_blank" aria-label="Instagram" id="social-instagram">
                 <i class="fa-brands fa-instagram"></i>
             </a>
-            <a href="https://youtube.com" target="_blank" aria-label="YouTube" id="social-youtube">
+            <a href="https://www.youtube.com/channel/UCTkiKmLQPAC_pR9Nbnc-4IA" target="_blank" aria-label="YouTube" id="social-youtube">
                 <i class="fa-brands fa-youtube"></i>
             </a>
-            <a href="https://spotify.com" target="_blank" aria-label="Spotify" id="social-spotify">
+            <a href="https://open.spotify.com/intl-id/artist/0NbKRRBuiIUwS9irPvi7wD" target="_blank" aria-label="Spotify" id="social-spotify">
                 <i class="fa-brands fa-spotify"></i>
             </a>
-            <a href="https://tiktok.com" target="_blank" aria-label="TikTok" id="social-tiktok">
+            <a href="https://www.tiktok.com/@perunggu__" target="_blank" aria-label="TikTok" id="social-tiktok">
                 <i class="fa-brands fa-tiktok"></i>
             </a>
         </div>
@@ -196,23 +221,113 @@
         });
     });
 
-    // Hero dot indicators
+    // Hero carousel
+    const slides = document.querySelectorAll('.hero-slide');
     const dots = document.querySelectorAll('.hero-dots .dot');
+    const prevBtn = document.getElementById('hero-prev');
+    const nextBtn = document.getElementById('hero-next');
+    let currentSlide = 0;
+    let autoSlideInterval;
+
+    function showSlide(index) {
+        // Remove active class from all slides and dots
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+
+        // Add active class to current slide and dot
+        slides[index].classList.add('active');
+        dots[index].classList.add('active');
+        currentSlide = index;
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    // Next/Previous button event listeners
+    nextBtn.addEventListener('click', () => {
+        nextSlide();
+        resetAutoSlide();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        prevSlide();
+        resetAutoSlide();
+    });
+
+    // Dot indicators
     dots.forEach((dot, index) => {
         dot.addEventListener('click', () => {
-            dots.forEach(d => d.classList.remove('active'));
-            dot.classList.add('active');
+            showSlide(index);
+            resetAutoSlide();
         });
     });
 
+    // Auto slide every 5 seconds
+    function startAutoSlide() {
+        autoSlideInterval = setInterval(nextSlide, 5000);
+    }
+
+    function resetAutoSlide() {
+        clearInterval(autoSlideInterval);
+        startAutoSlide();
+    }
+
+    // Start auto slide
+    startAutoSlide();
+
     // Play button toggle
     const playBtn = document.getElementById('btn-play');
+    const audioPlayer = document.getElementById('audio-player');
+    const progressBar = document.getElementById('progress-bar');
+    const currentTimeSpan = document.getElementById('current-time');
+    const totalTimeSpan = document.getElementById('total-time');
+    
     let isPlaying = false;
+
+    // Format time helper function
+    function formatTime(seconds) {
+        const mins = Math.floor(seconds / 60);
+        const secs = Math.floor(seconds % 60);
+        return `${mins}:${secs.toString().padStart(2, '0')}`;
+    }
+
+    // Update total time when metadata loaded
+    audioPlayer.addEventListener('loadedmetadata', () => {
+        totalTimeSpan.textContent = formatTime(audioPlayer.duration);
+    });
+
+    // Update progress bar and current time
+    audioPlayer.addEventListener('timeupdate', () => {
+        const progress = (audioPlayer.currentTime / audioPlayer.duration) * 100;
+        progressBar.style.width = `${progress}%`;
+        currentTimeSpan.textContent = formatTime(audioPlayer.currentTime);
+    });
+
+    // Reset when song ends
+    audioPlayer.addEventListener('ended', () => {
+        isPlaying = false;
+        playBtn.innerHTML = '<i class="fas fa-play"></i>';
+        progressBar.style.width = '0%';
+        currentTimeSpan.textContent = '0:00';
+    });
+
+    // Play/Pause button
     playBtn.addEventListener('click', () => {
         isPlaying = !isPlaying;
-        playBtn.innerHTML = isPlaying
-            ? '<i class="fas fa-pause"></i>'
-            : '<i class="fas fa-play"></i>';
+        if (isPlaying) {
+            audioPlayer.play();
+            playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+        } else {
+            audioPlayer.pause();
+            playBtn.innerHTML = '<i class="fas fa-play"></i>';
+        }
     });
 </script>
 

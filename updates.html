@@ -96,7 +96,7 @@
             </table>
 
             <div class="center">
-                <button class="more-btn" id="btn-all-tour">
+                <button class="more-btn" id="btn-all-tour" onclick="window.location.href='tourdates.html'">
                     SEE ALL TOUR DATES
                 </button>
             </div>
@@ -154,7 +154,7 @@
             </article>
 
             <div class="center">
-                <button class="more-btn" id="btn-all-news">
+                <button class="more-btn" id="btn-all-news" onclick="window.location.href='allnews.html'">
                     VIEW ALL NEWS
                 </button>
             </div>
@@ -191,19 +191,19 @@
 
         <div class="social">
 
-            <a href="https://facebook.com" target="_blank" aria-label="Facebook" id="social-facebook">
+            <a href="https://www.tiktok.com/@perunggu__" target="_blank" aria-label="Facebook" id="social-facebook">
                 <i class="fa-brands fa-facebook-f"></i>
             </a>
 
-            <a href="https://instagram.com" target="_blank" aria-label="Instagram" id="social-instagram">
+            <a href="https://www.instagram.com/perunggu_/" target="_blank" aria-label="Instagram" id="social-instagram">
                 <i class="fa-brands fa-instagram"></i>
             </a>
 
-            <a href="https://youtube.com" target="_blank" aria-label="YouTube" id="social-youtube">
+            <a href="https://www.youtube.com/channel/UCTkiKmLQPAC_pR9Nbnc-4IA" target="_blank" aria-label="YouTube" id="social-youtube">
                 <i class="fa-brands fa-youtube"></i>
             </a>
 
-            <a href="https://spotify.com" target="_blank" aria-label="Spotify" id="social-spotify">
+            <a href="https://open.spotify.com/intl-id/artist/0NbKRRBuiIUwS9irPvi7wD" target="_blank" aria-label="Spotify" id="social-spotify">
                 <i class="fa-brands fa-spotify"></i>
             </a>
 
@@ -230,6 +230,14 @@
         link.addEventListener('click', () => {
             menuToggle.classList.remove('active');
             mainNav.classList.remove('open');
+        });
+    });
+
+    // Buy ticket buttons
+    const buyButtons = document.querySelectorAll('table button');
+    buyButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            alert('Tiket akan segera hadir!');
         });
     });
 </script>

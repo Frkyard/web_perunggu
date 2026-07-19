@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PERUNGGU — Galeri foto perjalanan band PERUNGGU dari berbagai konser dan momen berkesan.">
+    <meta name="theme-color" content="#0a0a0f">
+    <title>PERUNGGU — Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="main-header">
+    <div class="logo">
+        <img src="images/logo.jpeg" alt="Logo Perunggu">
+        <span>PERUNGGU</span>
+    </div>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+    </button>
+    <nav id="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="updates.html">Updates</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- GALLERY SECTION -->
+<section class="page-section" id="gallery-section">
+    <div class="gallery-header">
+        <h2 class="section-title">Gallery</h2>
+        <p style="color: var(--text-secondary); font-size: 16px; margin-top: -10px;">Perjalanan kami dalam gambar — dari panggung hingga di balik layar</p>
+    </div>
+
+    <!-- CONCERT PHOTOS -->
+    <div class="gallery-category">
+        <h3 style="font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 700; color: var(--accent); margin-bottom: 20px; letter-spacing: 1px;">Behind The Scene</h3>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/concert/bts1.png" alt="Behind The Scene 1">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/concert/bts2.png" alt="Behind The Scene 2">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/concert/bts3.png" alt="Behind The Scene 3">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/concert/bts4.png" alt="Behind The Scene 4">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/concert/bts5.png" alt="Behind The Scene 5">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MEMBER PHOTOS -->
+    <div class="gallery-category">
+        <h3 style="font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 700; color: var(--accent); margin-bottom: 20px; letter-spacing: 1px;">Members</h3>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/members/maul.png" alt="Maulana Ibrahim">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/members/adam.png" alt="Adam Adenan">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/members/ildo.png" alt="Ildo Reynardian Hasman">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ADDITIONAL GALLERY -->
+    <div class="gallery-category">
+        <h3 style="font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 700; color: var(--accent); margin-bottom: 20px; letter-spacing: 1px;">Moments</h3>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/gallery/gallery1.png" alt="Gallery 1">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery/gallery2.png" alt="Gallery 2">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery/gallery3.png" alt="Gallery 3">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery/gallery4.png" alt="Gallery 4">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- LIGHTBOX MODAL -->
+<div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">
+        <i class="fas fa-times"></i>
+    </button>
+    <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+    <img src="" alt="Gallery Image" id="lightbox-img">
+</div>
+
+<!-- FOOTER -->
+<footer id="main-footer">
+    <div class="footer-left">
+        <img src="images/logo.jpeg" alt="Perunggu Logo">
+        <div class="social">
+            <a href="https://www.instagram.com/perunggu_/" target="_blank" aria-label="Instagram" id="social-instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCTkiKmLQPAC_pR9Nbnc-4IA" target="_blank" aria-label="YouTube" id="social-youtube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://open.spotify.com/intl-id/artist/0NbKRRBuiIUwS9irPvi7wD" target="_blank" aria-label="Spotify" id="social-spotify">
+                <i class="fa-brands fa-spotify"></i>
+            </a>
+            <a href="https://www.tiktok.com/@perunggu__" target="_blank" aria-label="TikTok" id="social-tiktok">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+        </div>
+    </div>
+    <p>&copy; Copyright 2026 PERUNGGU</p>
+</footer>
+
+<script>
+    // Hamburger menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const mainNav = document.getElementById('main-nav');
+
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        mainNav.classList.toggle('open');
+    });
+
+    mainNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            menuToggle.classList.remove('active');
+            mainNav.classList.remove('open');
+        });
+    });
+
+    // Lightbox functionality
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxClose = document.getElementById('lightbox-close');
+    const lightboxPrev = document.getElementById('lightbox-prev');
+    const lightboxNext = document.getElementById('lightbox-next');
+    const galleryItems = document.querySelectorAll('.gallery-item img');
+    
+    let currentImageIndex = 0;
+    let imagesArray = Array.from(galleryItems);
+
+    // Open lightbox
+    galleryItems.forEach((img, index) => {
+        img.parentElement.addEventListener('click', () => {
+            currentImageIndex = index;
+            showImage(currentImageIndex);
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    // Close lightbox
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    // Show image
+    function showImage(index) {
+        lightboxImg.src = imagesArray[index].src;
+        lightboxImg.alt = imagesArray[index].alt;
+    }
+
+    // Navigate images
+    lightboxNext.addEventListener('click', () => {
+        currentImageIndex = (currentImageIndex + 1) % imagesArray.length;
+        showImage(currentImageIndex);
+    });
+
+    lightboxPrev.addEventListener('click', () => {
+        currentImageIndex = (currentImageIndex - 1 + imagesArray.length) % imagesArray.length;
+        showImage(currentImageIndex);
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (!lightbox.classList.contains('active')) return;
+        
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowRight') lightboxNext.click();
+        if (e.key === 'ArrowLeft') lightboxPrev.click();
+    });
+</script>
+
+</body>
+</html>
