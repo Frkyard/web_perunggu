@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PERUNGGU — Stay updated with the latest tour dates, news, and behind the scenes content from Indonesia's rising music act.">
+    <meta name="theme-color" content="#0a0a0f">
+    <title>PERUNGGU — Updates & Tour Schedule</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<header id="main-header">
+
+    <div class="logo">
+        <img src="images/logo.jpeg" alt="Logo Perunggu">
+        <span>PERUNGGU</span>
+    </div>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav id="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="updates.html" class="active">Updates</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+    <img src="images/hero.jpeg" alt="Perunggu Live Concert">
+</section>
+
+<!-- CONTENT -->
+<main class="container">
+
+    <section class="content">
+
+        <!-- TOUR -->
+        <section class="tour" id="tour-schedule">
+
+            <h2>Tour Schedule</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>City</th>
+                        <th>Venue</th>
+                        <th>Ticket</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>12 May 2026</td>
+                        <td>Jakarta</td>
+                        <td>GBK Arena</td>
+                        <td><button id="buy-jakarta">BUY</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>18 May 2026</td>
+                        <td>Bandung</td>
+                        <td>Sasana Budaya</td>
+                        <td><button id="buy-bandung">BUY</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>25 May 2026</td>
+                        <td>Yogyakarta</td>
+                        <td>Jogja Expo</td>
+                        <td><button id="buy-yogyakarta">BUY</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>30 May 2026</td>
+                        <td>Surabaya</td>
+                        <td>Convention Hall</td>
+                        <td><button id="buy-surabaya">BUY</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="center">
+                <button class="more-btn" id="btn-all-tour">
+                    SEE ALL TOUR DATES
+                </button>
+            </div>
+
+        </section>
+
+        <!-- NEWS -->
+        <section class="news" id="latest-news">
+
+            <h2>Latest News</h2>
+
+            <article class="news-card" id="news-new-single">
+
+                <img src="images/news1.jpeg" alt="Perunggu New Single Release">
+
+                <div>
+                    <h3>Perunggu Releases New Single</h3>
+
+                    <p>
+                        Perunggu officially releases their newest single
+                        and receives positive responses from listeners.
+                    </p>
+                </div>
+
+            </article>
+
+            <article class="news-card" id="news-national-tour">
+
+                <img src="images/news2.jpeg" alt="Perunggu National Tour">
+
+                <div>
+                    <h3>National Tour Starts Soon</h3>
+
+                    <p>
+                        Perunggu will visit several cities across
+                        Indonesia during their national tour.
+                    </p>
+                </div>
+
+            </article>
+
+            <article class="news-card" id="news-behind-scenes">
+
+                <img src="images/news3.jpeg" alt="Perunggu Recording Behind The Scenes">
+
+                <div>
+                    <h3>Behind The Scenes Recording</h3>
+
+                    <p>
+                        Fans can now watch exclusive footage from
+                        the latest recording sessions.
+                    </p>
+                </div>
+
+            </article>
+
+            <div class="center">
+                <button class="more-btn" id="btn-all-news">
+                    VIEW ALL NEWS
+                </button>
+            </div>
+
+        </section>
+
+    </section>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="news-archive">
+
+        <img src="images/archive.jpeg" alt="News Archive" class="archive-image">
+
+        <h2>News Archive</h2>
+
+        <ul>
+            <li><a href="#">April 2026 (6)</a></li>
+            <li><a href="#">March 2026 (4)</a></li>
+            <li><a href="#">February 2026 (3)</a></li>
+            <li><a href="#">January 2026 (8)</a></li>
+            <li><a href="#">December 2025 (7)</a></li>
+            <li><a href="#">November 2025 (5)</a></li>
+        </ul>
+
+    </aside>
+
+</main>
+
+<footer id="main-footer">
+
+    <div class="footer-left">
+
+        <img src="images/logo.jpeg" alt="Perunggu Logo">
+
+        <div class="social">
+
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook" id="social-facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram" id="social-instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube" id="social-youtube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="https://spotify.com" target="_blank" aria-label="Spotify" id="social-spotify">
+                <i class="fa-brands fa-spotify"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+    <p>&copy; Copyright 2026 PERUNGGU</p>
+
+</footer>
+
+<script>
+    // Hamburger menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const mainNav = document.getElementById('main-nav');
+
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        mainNav.classList.toggle('open');
+    });
+
+    // Close menu when a nav link is clicked
+    mainNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            menuToggle.classList.remove('active');
+            mainNav.classList.remove('open');
+        });
+    });
+</script>
+
+</body>
+</html>

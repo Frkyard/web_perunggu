@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PERUNGGU — Dapatkan merchandise resmi band PERUNGGU. Kaos, hoodie, aksesoris, dan lainnya.">
+    <meta name="theme-color" content="#0a0a0f">
+    <title>PERUNGGU — Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="main-header">
+    <div class="logo">
+        <img src="images/logo.jpeg" alt="Logo Perunggu">
+        <span>PERUNGGU</span>
+    </div>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+    </button>
+    <nav id="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="updates.html">Updates</a></li>
+            <li><a href="shop.html" class="active">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- FILTER & SORT TOOLBAR -->
+<div class="shop-toolbar" id="shop-toolbar">
+    <label for="filter-select">
+        FILTER
+        <select id="filter-select">
+            <option value="all">Semua Produk</option>
+            <option value="kaos">Kaos</option>
+            <option value="hoodie">Hoodie</option>
+            <option value="aksesoris">Aksesoris</option>
+            <option value="poster">Poster</option>
+        </select>
+    </label>
+    <label for="sort-select">
+        SORT BY
+        <select id="sort-select">
+            <option value="terbaru">Terbaru</option>
+            <option value="harga-rendah">Harga: Rendah ke Tinggi</option>
+            <option value="harga-tinggi">Harga: Tinggi ke Rendah</option>
+            <option value="populer">Paling Populer</option>
+        </select>
+    </label>
+</div>
+
+<!-- SHOP LAYOUT -->
+<div class="shop-layout">
+
+    <!-- KATEGORI SIDEBAR -->
+    <aside class="shop-sidebar" id="shop-sidebar">
+        <h3>Kategori</h3>
+        <ul class="kategori-list">
+            <li><a href="#" class="active" data-filter="all" id="kat-semua">Semua Produk</a></li>
+            <li><a href="#" data-filter="kaos" id="kat-kaos">Kaos</a></li>
+            <li><a href="#" data-filter="hoodie" id="kat-hoodie">Hoodie</a></li>
+            <li><a href="#" data-filter="aksesoris" id="kat-aksesoris">Aksesoris</a></li>
+            <li><a href="#" data-filter="poster" id="kat-poster">Poster</a></li>
+        </ul>
+    </aside>
+
+    <!-- PRODUCT GRID -->
+    <main class="product-grid" id="product-grid">
+
+        <div class="product-card" data-category="kaos" data-price="250000" id="product-1">
+            <div class="product-img placeholder-img">
+                <i class="fas fa-tshirt"></i>
+            </div>
+            <div class="product-info">
+                <h3>Kaos Tour 2026</h3>
+                <span class="price">Rp 250.000</span>
+                <button class="btn-add" data-name="Kaos Tour 2026" data-price="250000">ADD</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="kaos" data-price="200000" id="product-2">
+            <div class="product-img placeholder-img">
+                <i class="fas fa-tshirt"></i>
+            </div>
+            <div class="product-info">
+                <h3>Kaos Logo Perunggu</h3>
+                <span class="price">Rp 200.000</span>
+                <button class="btn-add" data-name="Kaos Logo Perunggu" data-price="200000">ADD</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="kaos" data-price="220000" id="product-3">
+            <div class="product-img placeholder-img">
+                <i class="fas fa-tshirt"></i>
+            </div>
+            <div class="product-info">
+                <h3>Kaos Album Art</h3>
+                <span class="price">Rp 220.000</span>
+                <button class="btn-add" data-name="Kaos Album Art" data-price="220000">ADD</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="hoodie" data-price="450000" id="product-4">
+            <div class="product-img placeholder-img">
+                <i class="fas fa-tshirt"></i>
+            </div>
+            <div class="product-info">
+                <h3>Hoodie Perunggu</h3>
+                <span class="price">Rp 450.000</span>
+                <button class="btn-add" data-name="Hoodie Perunggu" data-price="450000">ADD</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="hoodie" data-price="480000" id="product-5">
+            <div class="product-img placeholder-img">
+                <i class="fas fa-tshirt"></i>
+            </div>
+            <div class="product-info">
+                <h3>Hoodie Tour Edition</h3>
+                <span class="price">Rp 480.000</span>
+                <button class="btn-add" data-name="Hoodie Tour Edition" data-price="480000">ADD</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="aksesoris" data-price="75000" id="product-6">
+            <div class="product-img placeholder-img">
+                <i class="fas fa-hat-cowboy"></i>
+            </div>
+            <div class="product-info">
+                <h3>Topi Perunggu</h3>
+                <span class="price">Rp 75.000</span>
+                <button class="btn-add" data-name="Topi Perunggu" data-price="75000">ADD</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="aksesoris" data-price="50000" id="product-7">
+            <div class="product-img placeholder-img">
+                <i class="fas fa-mug-hot"></i>
+            </div>
+            <div class="product-info">
+                <h3>Sticker Pack</h3>
+                <span class="price">Rp 50.000</span>
+                <button class="btn-add" data-name="Sticker Pack" data-price="50000">ADD</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="poster" data-price="120000" id="product-8">
+            <div class="product-img placeholder-img">
+                <i class="fas fa-image"></i>
+            </div>
+            <div class="product-info">
+                <h3>Poster Album Art</h3>
+                <span class="price">Rp 120.000</span>
+                <button class="btn-add" data-name="Poster Album Art" data-price="120000">ADD</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="aksesoris" data-price="85000" id="product-9">
+            <div class="product-img placeholder-img">
+                <i class="fas fa-bag-shopping"></i>
+            </div>
+            <div class="product-info">
+                <h3>Tote Bag Perunggu</h3>
+                <span class="price">Rp 85.000</span>
+                <button class="btn-add" data-name="Tote Bag Perunggu" data-price="85000">ADD</button>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- CART SIDEBAR -->
+    <aside class="cart-sidebar" id="cart-sidebar">
+        <h3>Your Cart</h3>
+
+        <div class="cart-empty" id="cart-empty">
+            <i class="fas fa-cart-shopping"></i>
+            <p>Belum ada produk di keranjang</p>
+        </div>
+
+        <div class="cart-items" id="cart-items" style="display: none;"></div>
+
+        <div class="cart-total">
+            <span>Total</span>
+            <span id="cart-total-price">Rp 0</span>
+        </div>
+
+        <button class="btn-checkout" id="btn-checkout">CHECKOUT</button>
+    </aside>
+
+</div>
+
+<!-- FOOTER -->
+<footer id="main-footer">
+    <div class="footer-left">
+        <img src="images/logo.jpeg" alt="Perunggu Logo">
+        <div class="social">
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram" id="social-instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube" id="social-youtube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://spotify.com" target="_blank" aria-label="Spotify" id="social-spotify">
+                <i class="fa-brands fa-spotify"></i>
+            </a>
+            <a href="https://tiktok.com" target="_blank" aria-label="TikTok" id="social-tiktok">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+        </div>
+    </div>
+    <p>&copy; Copyright 2026 PERUNGGU</p>
+</footer>
+
+<script>
+    // Hamburger menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const mainNav = document.getElementById('main-nav');
+
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        mainNav.classList.toggle('open');
+    });
+
+    mainNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            menuToggle.classList.remove('active');
+            mainNav.classList.remove('open');
+        });
+    });
+
+    // Cart functionality
+    let cart = [];
+
+    function updateCart() {
+        const cartItems = document.getElementById('cart-items');
+        const cartEmpty = document.getElementById('cart-empty');
+        const cartTotal = document.getElementById('cart-total-price');
+
+        if (cart.length === 0) {
+            cartEmpty.style.display = 'block';
+            cartItems.style.display = 'none';
+        } else {
+            cartEmpty.style.display = 'none';
+            cartItems.style.display = 'block';
+
+            cartItems.innerHTML = cart.map((item, index) => `
+                <div class="cart-item">
+                    <div class="cart-item-img placeholder-img">
+                        <i class="fas fa-box" style="font-size: 14px;"></i>
+                    </div>
+                    <div class="cart-item-info">
+                        <span>${item.name}</span>
+                        <span class="item-price">Rp ${item.price.toLocaleString('id-ID')}</span>
+                    </div>
+                    <button class="cart-item-remove" data-index="${index}" aria-label="Remove item">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            `).join('');
+
+            // Add remove listeners
+            cartItems.querySelectorAll('.cart-item-remove').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    cart.splice(parseInt(btn.dataset.index), 1);
+                    updateCart();
+                });
+            });
+        }
+
+        const total = cart.reduce((sum, item) => sum + item.price, 0);
+        cartTotal.textContent = `Rp ${total.toLocaleString('id-ID')}`;
+    }
+
+    // Add to cart buttons
+    document.querySelectorAll('.btn-add').forEach(btn => {
+        btn.addEventListener('click', () => {
+            cart.push({
+                name: btn.dataset.name,
+                price: parseInt(btn.dataset.price)
+            });
+            updateCart();
+
+            // Button feedback
+            btn.textContent = 'ADDED!';
+            btn.style.background = 'var(--accent)';
+            btn.style.color = 'var(--bg-primary)';
+            setTimeout(() => {
+                btn.textContent = 'ADD';
+                btn.style.background = '';
+                btn.style.color = '';
+            }, 1000);
+        });
+    });
+
+    // Category filter
+    document.querySelectorAll('.kategori-list a').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            document.querySelectorAll('.kategori-list a').forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+
+            const filter = link.dataset.filter;
+            document.querySelectorAll('.product-card').forEach(card => {
+                if (filter === 'all' || card.dataset.category === filter) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Sync dropdown
+            document.getElementById('filter-select').value = filter;
+        });
+    });
+
+    // Filter dropdown sync
+    document.getElementById('filter-select').addEventListener('change', (e) => {
+        const filter = e.target.value;
+        document.querySelectorAll('.kategori-list a').forEach(l => {
+            l.classList.toggle('active', l.dataset.filter === filter);
+        });
+        document.querySelectorAll('.product-card').forEach(card => {
+            if (filter === 'all' || card.dataset.category === filter) {
+                card.style.display = '';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+
+    // Sort dropdown
+    document.getElementById('sort-select').addEventListener('change', (e) => {
+        const grid = document.getElementById('product-grid');
+        const cards = Array.from(grid.querySelectorAll('.product-card'));
+
+        cards.sort((a, b) => {
+            const priceA = parseInt(a.dataset.price);
+            const priceB = parseInt(b.dataset.price);
+            if (e.target.value === 'harga-rendah') return priceA - priceB;
+            if (e.target.value === 'harga-tinggi') return priceB - priceA;
+            return 0;
+        });
+
+        cards.forEach(card => grid.appendChild(card));
+    });
+
+    // Checkout button
+    document.getElementById('btn-checkout').addEventListener('click', () => {
+        if (cart.length === 0) {
+            alert('Keranjang masih kosong!');
+        } else {
+            alert(`Checkout ${cart.length} item. Total: Rp ${cart.reduce((s, i) => s + i.price, 0).toLocaleString('id-ID')}`);
+        }
+    });
+</script>
+
+</body>
+</html>
