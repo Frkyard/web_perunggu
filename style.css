@@ -263,6 +263,11 @@ nav a:hover::after {
     margin: 0 auto;
 }
 
+.container > *,
+.content {
+    min-width: 0;
+}
+
 /* ================================
    SECTION TITLES
    ================================ */
@@ -879,11 +884,23 @@ footer p {
     }
 
     /* --- Table (avoid overflow on tablet widths) --- */
-    table {
-        display: block;
+    .tour {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .table-responsive {
         width: 100%;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
+    }
+
+    .tour table,
+    .table-responsive table {
+        display: table;
+        width: 100%;
+        min-width: 560px;
+        overflow: visible;
     }
 }
 
@@ -978,8 +995,8 @@ footer p {
     }
 
     /* --- Hero --- */
-    .hero img {
-        height: 260px;
+    .hero::after {
+        height: 60px;
     }
 
     .hero-text h1 {
@@ -995,13 +1012,21 @@ footer p {
     /* --- Layout --- */
     .container {
         grid-template-columns: 1fr;
-        padding: 20px 16px;
+        padding: 24px 16px 20px;
         gap: 20px;
     }
 
-    img {
+    img:not(.hero img) {
         max-width: 100%;
         height: auto;
+        display: block;
+    }
+
+    .hero img {
+        width: 100%;
+        height: clamp(200px, 45vw, 260px);
+        max-width: none;
+        object-fit: cover;
         display: block;
     }
 
@@ -1026,13 +1051,6 @@ footer p {
     }
 
     /* --- Table --- */
-    table {
-        display: block;
-        width: 100%; /* Add width: 100% */
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-    }
-
     table th, table td {
         padding: 12px 16px;
         font-size: 13px;
@@ -4123,14 +4141,14 @@ nav a.active::after {
     }
 }
 
-.table-responsive{
-    width:100%;
-    overflow-x:auto;
-    -webkit-overflow-scrolling:touch;
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
-.tour-table{
-    width:100%;
-    min-width:650px;
-    border-collapse:collapse;
+.tour-table {
+    width: 100%;
+    min-width: 650px;
+    border-collapse: collapse;
 }
